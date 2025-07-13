@@ -1,0 +1,143 @@
+Skip to content
+Navigation Menu
+gajo108
+talametry-site
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+talametry-site
+/
+Name your file...
+in
+main
+
+Edit
+
+Preview
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { motion } from "framer-motion";
+
+export default function TalametrySite() {
+  return (
+    <div className="min-h-screen bg-black text-white p-8 font-sans">
+      <header className="text-center mb-12">
+        <img src="/talachakra.png" alt="Tala Chakra" className="mx-auto mb-4 w-48" />
+        <h1 className="text-4xl md:text-6xl font-bold mb-2">Talametry.art</h1>
+        <p className="text-xl text-gray-300">Where Rhythm Meets Cosmos</p>
+      </header>
+
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <Card>
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-2">Theory</h2>
+            <p className="text-gray-300">Explore the foundations of rhythm, talas, and their harmonic integrations with consciousness and geometry.</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-2">Repertoire</h2>
+            <p className="text-gray-300">Access curated compositions, slokas, and rhythmic cycles organized by raga, tala, and Ishta-devata alignment.</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-2">Recordings</h2>
+            <p className="text-gray-300">Stream audio and video assets of pakhawaj performances, talachakra demonstrations, and vocal renderings of stutis.</p>
+            <div className="mt-4">
+              <video controls className="w-full mb-4">
+                <source src="/sample-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <audio controls className="w-full">
+                <source src="/sample-audio.mp3" type="audio/mp3" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-2">Biographies</h2>
+            <p className="text-gray-300">Learn about the practitioners, lineage-holders, and contributors to the Talametry movement.</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="text-center">
+        <h2 className="text-2xl font-semibold mb-4">Join the Rhythm</h2>
+        <Input placeholder="Enter your email to receive updates" className="mb-4 text-black" />
+        <Button>Subscribe</Button>
+      </section>
+    </div>
+  );
+}
+New File at / · gajo108/talametry-site
